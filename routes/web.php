@@ -31,3 +31,6 @@ Route::get('/', function () {
 });
 
 Route::post('/', ['as' => 'send.contact', 'uses' => 'HomeController@send']);
+Route::get('/teste', function(){
+	dd(config('mail'));
+});
