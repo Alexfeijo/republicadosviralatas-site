@@ -170,6 +170,11 @@
             </h2>
         </div>
         <div class="col-sm-6 col-xs-12">
+            @if(Session::has('message'))
+                <div class="col-xs-12 text-center">
+                    <h3 style="color:#FFF;">{{ Session::get('message') }}</h3>
+                </div>
+            @endif
             <form action="{{ route('send.contact') }}" method="POST">
                 {{ csrf_field() }}
                 <div>

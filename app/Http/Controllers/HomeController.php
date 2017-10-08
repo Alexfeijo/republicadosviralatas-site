@@ -16,5 +16,7 @@ class HomeController extends Controller
 	        $message->from($dados['email']);
 	        $message->subject('Contato feito pelo site');
 	    });
+
+	    return redirect()->back()->with(['message' => 'Contato enviado com sucesso!']);
     }
 }
