@@ -1,0 +1,263 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: rgba(184, 184, 253, 0.6);
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 15px 0;
+    z-index: 999;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    border-bottom: solid 1px rgba(184, 184, 253, 1);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+        position: fixed;
+        flex-direction: column;
+    }
+  .topnav.responsive a.icon {
+    position: relative;
+    margin: 5px auto;
+    top: 0;
+    display: block;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+
+
+.nav {
+    text-transform: uppercase;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    max-height: 70px;
+    background-color: rgba(184, 184, 253, 0.3);
+    padding: 15px 0;
+}
+
+.nav > span > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#container {
+    height: auto;
+    width: 100%;
+    padding: 5% 5% 2% 5%;
+    margin-bottom: 5%;
+}
+
+#container img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.box-img-gato {
+    padding: 0;
+    position: relative;
+    float: left;
+}
+
+.box-img-gato > a {
+    display: block;
+}
+
+.box-img-gato > a > img {
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 3px;
+    border: solid 1px #fff;
+}
+
+.area {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 25%;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.projeto {
+    background-color: #b8b3ff;
+}
+
+.projeto h4 {
+    text-align: justify;
+}
+
+#adota-ajuda {
+    height: auto;
+    width: 100%;
+    background-color: #F37562;
+    text-align: center;
+    padding-top: 5%; 
+    
+}
+
+#adota-ajuda h2 {
+    padding-left: 20px;
+    padding-top: 5px;
+    color: white;
+    font-size: 54px;
+}
+
+#adota-ajuda form {
+    margin-bottom: 15%;
+}
+
+#auto-ajuda div>input {
+    border-radius: 35px;
+    color: #F37562;
+    min-height: 30px;
+}
+
+
+#contato{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#contato h3 {
+    text-align: left;
+}
+
+@media (max-width: 480px){
+    #adota-ajuda form {
+        margin-top: 15%;
+    }
+    #contato h3 {
+        text-align: center;
+    }
+    #contato img {
+        margin: 0 auto; 
+    }
+}
+
+#contato p {
+    text-align: justify;
+    padding-top: 15px;
+}
+
+#contato img {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+footer {
+    height: auto;
+    padding: 5% 0 2% 0;
+    background-color: rgba(224, 224, 224, 1);
+}
+
+form input.form-control {
+    height: 50px;
+    color: #F37562;
+}
+
+footer a {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+footer div a img {
+    width: 50%;
+}
+
+footer .copyright {
+    margin-top: 3%;
+    color: #fff;
+}
+
+@media (max-width: 480px){
+    footer div a img {
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    footer div {
+        margin-bottom: 15px;
+    }
+    footer div:last-child {
+        margin-bottom: 0;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+/*#FDC2C2 
+#F9DE63*/
