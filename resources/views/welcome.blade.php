@@ -30,7 +30,7 @@
             <a href="#adota-ajuda">ajuda</a>
             <a href="#contato">adote</a> 
             <a href="#adota-ajuda">contato</a>
-            <a href="">
+            <a href="https://facebook.com/republicadosviralatas">
                 <img src="{{ asset('assets/imagens/face-icon.png') }}" alt="facebook">
             </a>
         </div>
@@ -156,7 +156,6 @@
                 </h3>
             </div>
         </div>
-        
     </div>
     
     <div id="adota-ajuda" class="container-fluid">
@@ -203,7 +202,7 @@
                 <a href="tel:48996185564">48 - 996185564</a>    
             </div>
             <div class="col-sm-1 col-xs-12 pull-right">
-                <a href="">
+                <a href="http://facebook.com/republicadosviralatas">
                     <img src="{{ asset('assets/imagens/face-icon.png') }}" alt="facebook">
                 </a>
             </div>
@@ -232,6 +231,15 @@
                 x.className = "topnav";
             }
         }
+        $(document).ready(function(){
+            var $doc = $('html, body');
+            $('a').click(function() {
+                $doc.animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top - $("#myTopnav").outerHeight(true)
+                }, 500);
+                return false;
+            });
+        });
     </script>
   </body>
 </html>
