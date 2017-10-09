@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-  URL::forceScheme('https');
+
+URL::forceScheme('http');
 
 Route::get('/', function () {
 	$imgs = [
