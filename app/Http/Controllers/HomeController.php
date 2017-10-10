@@ -12,8 +12,7 @@ class HomeController extends Controller
     	$dados = $request->all();
 
     	Mail::send('emails.email', $dados, function($message) use ($dados) {
-	        $message->to('alexandroffeijo@gmail.com');
-	        $message->from($dados['email']);
+	        $message->to(env("MAIL_USERNAME"));
 	        $message->subject('Contato feito pelo site');
 	    });
 
